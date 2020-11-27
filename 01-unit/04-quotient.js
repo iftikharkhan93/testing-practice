@@ -35,7 +35,10 @@ try {
   // It should ignore additional numbers.
 
   // --------------------------------------------------
-  // Test Case 4
+ 	var result = quotient(1,1,1,1);
+	 if (result!= 1) throw new Error ('Expected quotient(1,1,1,1) to be 1. Recevied:'+result);
+	
+	// Test Case 4
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
 
