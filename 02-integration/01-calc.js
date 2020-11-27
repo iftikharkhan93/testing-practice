@@ -37,12 +37,21 @@ function divide(num1,num2){
 
 }
 
-function calc(operation, num1, num2) {
-	if (operation == 'add') return sum(num1,num2);
-	if(operation == 'diff') return difference(num1,num2);
-	if (operation == 'prod') return multiply(num1,num2);
-	if (operation == 'div') return divide(num1,num2);
+function exponent(num1,num2){
+	return "Operation not supported"
 }
+
+
+
+
+function calc(operation, num1, num2) {
+	if (operation == 'add')  return sum(num1,num2);
+	if (operation == 'diff') return difference(num1,num2);
+	if (operation == 'prod') return multiply(num1,num2);
+	if (operation == 'div')  return divide(num1,num2);
+	if (operation == 'exp')  return exponent (num1,num2);
+}
+
 
 // ==================================================
 // DEFINE AND EXECUTE TEST CASES
@@ -85,8 +94,11 @@ try {
   // Test Case 5
   // --------------------------------------------------
   // It should return the message 'Operation not supported.' when the user provides: exponent, 2, 8.
-
-  console.log('All tests passed successfully.');
+ var result = exponent('exp',2,8);
+	if(result !="Operation not supported") throw new Error ('Expected exponent("exp, 2,8") to operations not supported. Received. '+result)
+		
+  
+	console.log('All tests passed successfully.');
 
 // ==================================================
 // PRINT ERRORS
