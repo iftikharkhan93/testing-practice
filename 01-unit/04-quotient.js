@@ -26,6 +26,9 @@ try {
   // --------------------------------------------------
   // It should return the text 'ERROR' when the second number is 0.
 
+	var result = quotient(1,0);
+	if (result == undefined) throw new Error('Error, cannot divide by zero. Received: '+ result);
+
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
