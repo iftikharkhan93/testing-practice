@@ -1,8 +1,13 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function sum() {
+function sum(num1,num2) {
+      if(num1 == undefined) num1=0;
+	if(num2 == undefined) num2 = 0;
 
+
+	var $result=num1+num2
+	return $result
 }
 
 // ==================================================
@@ -20,16 +25,24 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should ignore additional numbers.
+var result = sum(1, 1, 1, 1);
+	if(result !=2) throw new Error ('Expected sum(1, 1, 1, 1) to be 2. Received: '+ result);
 
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
+var result = sum(9);
+	if(result !=9) throw new Error ('Expected sum(9) to be 9. Received: '+result);
+
 
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
+
+var result = sum();
+	if (result !=0) throw new Error('Expected sum() to be 0. Received: ' +result); 
 
   console.log('All tests passed successfully.');
 
