@@ -42,9 +42,14 @@ try {
   // When invoked with only 1 number, it should return that number.
 
   // --------------------------------------------------
-  // Test Case 5
+ var result = product(0);
+	if(result !=0) throw new Error ('Expected product(0) to be 0. Received: '+ result)
+
+	// Test Case 5
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
+ var result = product();
+	if (result!=0) throw new Error('Expected product() to be zero. Received: ' +result);
 
   console.log('All tests passed successfully.');
 
