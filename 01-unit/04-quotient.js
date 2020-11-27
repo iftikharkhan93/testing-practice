@@ -43,7 +43,10 @@ try {
   // When invoked with only 1 number, it should return that number.
 
   // --------------------------------------------------
-  // Test Case 5
+ var result = quotient(3);
+	if (result !=3) throw new Error('Expected quotient(3) to be 3. Received: ' +result);
+	
+	// Test Case 5
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
 
