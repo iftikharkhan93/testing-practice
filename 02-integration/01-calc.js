@@ -10,8 +10,19 @@ function sum(num1,num2){
 }
 
 
+function difference(num1,num2){
+	if(num1 == undefined) num1=0;
+	if(num2 == undefined) num2=0;
+
+	var $result=num1-num2
+	return $result;
+	
+}
+
+
 function calc(operation, num1, num2) {
 	if (operation == 'add') return sum(num1, num2);
+	if(operation == 'diff') return difference(num1,num2);
 }
 
 // ==================================================
@@ -29,6 +40,10 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return the correct difference when the user provides: 'subtract', 20, 10.
+
+ var result = calc('diff', 20,10);
+	if(result !=10) throw new Error ('Expected calc("diff", 20,10) to be 10. Received: '+ result);
+
 
   // --------------------------------------------------
   // Test Case 3
