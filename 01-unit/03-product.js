@@ -25,7 +25,7 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return 0 when either of the numbers are 0.
- var result = product(0,0);
+ var result = product(1,0);
 	if(result !=0) throw new Error ('Expected product(0,0)to be 0. Received: '+result);
 
 
@@ -35,7 +35,9 @@ try {
   // It should ignore additional numbers.
 
   // --------------------------------------------------
-  // Test Case 4
+ var result = product(1,1,1,1);
+	if(result !=1) throw new Error ('Expected prod(1,1,1,1) to be 1. Received:' +result);
+	// Test Case 4
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
 
