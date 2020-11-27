@@ -1,8 +1,13 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function quotient() {
+function quotient(num1, num2) {
 
+	if(num1 == undefined) num1=0;
+	if(num2 == undefined) num2=1;
+	 
+	var $result = num1/num2
+	return $result
 }
 
 // ==================================================
